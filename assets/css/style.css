@@ -1,3 +1,56 @@
 body {
-  background-color: #7628a7; /* Un gris muy claro */
+  font-family: sans-serif;
+  color: #444;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  color: #1d3557;
+  font-weight: 700; /*equivalent to bold*/
+}
+
+h1 {
+  font-size: 52px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.main-nav-list {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1d3557;
+  font-size: 18px;
+}
+
+.tagline {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1d3557;
+}
+
+.project-description {
+  font-style: italic;
+}
+
+footer {
+  background-color: #f1faee;
+  color: #666;
+}
+
+footer a {
+  color: #e63946;
+  text-decoration: none;
 }
