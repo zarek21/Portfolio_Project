@@ -54,3 +54,20 @@ footer a {
   color: #e63946;
   text-decoration: none;
 }
+
+nav a:hover,
+nav a:focus {
+  color: #e63946;
+  border-bottom: 2 px solid #1d3557;
+}
+
+footer a:hover,
+footer a:focus {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#skills li:first-child {
+  font-weight: bold;
+  color: #1d3557;
+}
