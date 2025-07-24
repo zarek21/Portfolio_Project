@@ -2,7 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+}
+
+body {
+  font-family: "Roboto", "Inter", sans-serif;
+  background-color: black;
+  color: white;
 }
 
 .container {
@@ -31,10 +36,15 @@ a {
   display: flex;
   justify-content: center;
   margin-top: 30px;
+  font-size: 5.61rem;
+  letter-spacing: -0.1rem;
+  line-height: 150px;
 }
 
 .introduction {
   font-weight: normal;
+  font-size: 4.1rem;
+  letter-spacing: -0.1rem;
   margin-top: 30px;
 }
 
@@ -44,13 +54,26 @@ a {
   gap: 50px;
 }
 
+.icon-container {
+  display: flex;
+  margin-top: 80px;
+  justify-content: flex-end;
+}
+
+.fa-rocket {
+  font-size: 50px;
+  transform: rotate(135deg);
+  color: gold;
+}
+
 .title-projects {
   /* Al estar dentro del grid, le decimos que ocupe todo el ancho */
   grid-column: 1 / -1;
   text-align: center;
-  margin-top: 50px;
-  font-size: 30px;
+  font-size: 3.157rem;
+  letter-spacing: -0.1rem;
   text-transform: uppercase;
+  margin-top: 100px;
 }
 
 .project-card {
