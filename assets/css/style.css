@@ -52,7 +52,7 @@
 }
 
 body {
-  font-family: var(--ff-primary), var(--ff-secondary);
+  font-family: var(--ff-primary);
   border-bottom: 0.5rem solid var(--clr-accent-bg);
 }
 
@@ -63,20 +63,20 @@ a {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 var(--space-xl);
 }
 
 .contact-info {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: var(--space-xxl);
 }
 
 .contact-info a {
   margin-top: 50px;
   background-color: var(--clr-accent-bg);
   color: var(--clr-accent-text);
-  padding: 15px;
+  padding: var(--space-md);
   border-radius: 20px;
   font-weight: 600;
 }
