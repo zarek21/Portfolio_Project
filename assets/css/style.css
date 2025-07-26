@@ -1,3 +1,50 @@
+:root {
+  /* ================== */
+  /* SISTEMA DE COLOR   */
+  /* ================== */
+
+  /* -- Colores Base -- */
+
+  --clr-text: #343a40; /* Color de texto principal */
+  --clr-background: #ffffff; /* Color de fondo principal */
+
+  /* -- Colores de Acento/Marca -- */
+
+  --clr-accent-bg: #5f3dc4; /* Fondo/borde del elemento destacado */
+  --clr-accent-text: #e5dbff; /* Texto sobre el fondo destacado */
+
+  /* Puedes añadir más si los necesitas, por ejemplo, para los 'hover' */
+  --clr-accent-hover: #4e31a1;
+
+  /* ===================== */
+  /* SISTEMA DE TIPOGRAFÍA */
+  /* ===================== */
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Inter", sans-serif;
+
+  /* Escala Tipográfica (1.250 - Major Third) */
+  --fs-900: 3.815rem; /* Corresponde a h1 */
+  --fs-800: 3.052rem; /* Corresponde a h2 */
+  --fs-700: 2.441rem; /* Corresponde a h3 */
+  --fs-600: 1.953rem; /* Corresponde a h4 */
+  --fs-500: 1.563rem; /* Corresponde a h5 */
+  --fs-base: 1rem; /* Corresponde a p (párrafo) */
+  --fs-small: 0.8rem; /* Corresponde a small */
+
+  /* =================== */
+  /* SISTEMA DE ESPACIADO */
+  /* =================== */
+  /* Basado en la unidad base de 1rem (16px) */
+  --space-xxs: 0.25rem; /* 4px */
+  --space-xs: 0.5rem; /* 8px */
+  --space-sm: 0.75rem; /* 12px */
+  --space-md: 1rem; /* 16px - Base */
+  --space-lg: 1.5rem; /* 24px */
+  --space-xl: 2rem; /* 32px */
+  --space-xxl: 3rem; /* 48px */
+  --space-3xl: 4rem; /* 64px */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +52,8 @@
 }
 
 body {
-  font-family: "Roboto", "Inter", sans-serif;
-  color: black;
+  font-family: var(--ff-primary), var(--ff-secondary);
+  border-bottom: 0.5rem solid var(--clr-accent-bg);
 }
 
 a {
@@ -23,4 +70,24 @@ a {
   display: flex;
   justify-content: center;
   gap: 50px;
+}
+
+.contact-info a {
+  margin-top: 50px;
+  background-color: var(--clr-accent-bg);
+  color: var(--clr-accent-text);
+  padding: 15px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.contact-info a:link,
+.contact-info a:visited {
+  text-transform: uppercase;
+}
+
+.contact-info a:hover,
+.contact-info a:active {
+  background-color: var(--clr-accent-hover);
+  box-shadow: 0px 3px 10px 1px var(--clr-accent-bg);
 }
