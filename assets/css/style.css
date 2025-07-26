@@ -6,10 +6,12 @@
 
 body {
   font-family: "Roboto", "Inter", sans-serif;
-  background-color: black;
-  color: white;
+  color: black;
 }
 
+a {
+  text-decoration: none;
+}
 .container {
   width: 100%;
   max-width: 1200px;
@@ -17,83 +19,8 @@ body {
   padding: 0 20px;
 }
 
-a {
-  text-decoration: none;
-}
-
-.name {
-  font-size: 50px;
-}
-
 .contact-info {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
   gap: 50px;
-}
-
-.name {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  font-size: 5.61rem;
-  letter-spacing: -0.1rem;
-  line-height: 150px;
-}
-
-.introduction {
-  font-weight: normal;
-  font-size: 4.1rem;
-  letter-spacing: -0.1rem;
-  margin-top: 30px;
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
-}
-
-.icon-container {
-  display: flex;
-  margin-top: 80px;
-  justify-content: flex-end;
-}
-
-.fa-rocket {
-  font-size: 50px;
-  transform: rotate(135deg);
-  color: gold;
-}
-
-.title-projects {
-  /* Al estar dentro del grid, le decimos que ocupe todo el ancho */
-  grid-column: 1 / -1;
-  text-align: center;
-  font-size: 3.157rem;
-  letter-spacing: -0.1rem;
-  text-transform: uppercase;
-  margin-top: 100px;
-}
-
-.project-card {
-  /* Podríamos añadir sombras, bordes, etc. aquí. */
-}
-
-.project-name {
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-}
-
-.project-img {
-  width: 100%;
-  display: block; /* Práctica estándar para imágenes */
-}
-
-.project-description {
-  text-align: center;
-  font-style: italic;
-  font-weight: normal;
-  margin-top: 20px;
 }
