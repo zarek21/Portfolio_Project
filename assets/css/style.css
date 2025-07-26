@@ -68,8 +68,13 @@ a {
 
 .contact-info {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: var(--space-xxl);
+  margin-top: 250px;
+  margin-left: 300px;
+  position: fixed;
+  align-self: flex-start;
 }
 
 .contact-info a {
@@ -79,7 +84,11 @@ a {
   border: 2px solid var(--clr-accent-bg);
   padding: var(--space-md);
   border-radius: 9999px;
+  border-width: 3px;
   font-weight: 700;
+  width: 150px;
+  flex-shrink: 0;
+  text-align: center;
 }
 
 .contact-info a:link,
@@ -117,22 +126,38 @@ a {
 .what-i-do-container {
   display: flex;
   justify-content: center;
-  margin-top: 8rem;
-  gap: 150px;
+  align-items: center;
+  margin-top: 14rem;
+  gap: var(--space-xxl);
 }
 
 .what-i-do-text {
   font-size: var(--fs-700);
   font-weight: 400;
   color: var(--clr-text);
-  width: 400px;
+  max-width: 40ch;
 }
 
 .what-i-do-img {
-  display: inline-block;
-  margin-top: var(--space-xl);
+  display: block;
   height: 400px;
   width: 400px;
   order: -1;
-  border-radius: 20px;
+  border-radius: var(--space-lg);
+  object-fit: cover;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  margin-top: 120px;
+  font-size: var(--fs-600);
+  gap: 20rem;
+}
+
+.project-img-1 {
+  width: 400px;
+  height: 400px;
+  align-self: self-start;
 }

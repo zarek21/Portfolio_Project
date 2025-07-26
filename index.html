@@ -21,7 +21,8 @@
       <div class="container"></div>
       <header>
         <nav class="contact-info">
-          <a href="#">About me</a>
+          <a href="#about-me">About me</a>
+          <!-- Corregido -->
           <a href="#projects">Projects</a>
           <a href="#">Contact</a>
           <a href="#">Resume</a>
@@ -29,24 +30,22 @@
         <h1 class="name">Hey, I'm George</h1>
       </header>
 
-      <article>
-        <section class="introduction-container">
-          <h2>Frontend Developer & Game Programmer</h2>
-        </section>
-        <section class="what-i-do-container">
-          <h3 class="what-i-do-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolor
-            nostrum error saepe id eligendi tenetur voluptates iste assumenda
-            autem ad! Nulla, magnam neque. Veritatis ea aperiam blanditiis earum
-            id.
-          </h3>
-          <img
-            src="/img/main_img.webp"
-            alt="pic of zarek playing game boards on a university event"
-            class="what-i-do-img"
-          />
-        </section>
-      </article>
+      <!-- Eliminamos el <article> contenedor -->
+      <section class="introduction-container">
+        <h2>Frontend Developer & Game Programmer</h2>
+      </section>
+
+      <!-- La sección "About me" ahora es un hijo directo de main -->
+      <section class="what-i-do-container" id="about-me">
+        <!-- 'id' CORREGIDO -->
+        <h3 class="what-i-do-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, a.
+          Perferendis accusantium distinctio eveniet adipisci quae nesciunt
+          quasi obcaecati odit laudantium nisi delectus illo, voluptatum
+          architecto non ipsam perspiciatis accusamus.
+        </h3>
+        <img src="/img/main_img.webp" class="what-i-do-img" />
+      </section>
     </main>
   </body>
 </html>
