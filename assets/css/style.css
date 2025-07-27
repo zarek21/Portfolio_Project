@@ -140,13 +140,14 @@ a {
   letter-spacing: 2px;
 }
 
-.what-i-do-img {
-  display: block;
-  order: -1;
+.img-format {
   border-radius: var(--space-md);
-  object-fit: cover;
   height: 400px;
   width: 400px;
+}
+
+.what-i-do-img {
+  order: -1;
 }
 
 .about-me-container {
@@ -211,7 +212,7 @@ a {
   margin-bottom: var(--space-xl);
   display: inline-block;
   margin-right: 19px;
-  box-shadow: -10px 20px 1px 1px var(--clr-accent-bg);
+  box-shadow: -5px 10px 1px 1px var(--clr-accent-bg);
   letter-spacing: 1px;
 }
 
@@ -226,24 +227,30 @@ a {
   margin-bottom: var(--space-3xl);
 }
 
-#test {
-  margin-top: 1000px;
-  font-size: 5rem;
-}
-
 .project-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 200px;
 }
 
 .project-container h2 {
-  grid-row: 1;
-  grid-column: 1/-1;
-  text-align: center;
-  margin-top: 180px;
-  margin-bottom: 50px;
   font-size: var(--fs-800);
-  color: #343a40;
-  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: var(--clr-text);
+  border-bottom: 3px solid var(--clr-accent-bg);
+  padding: 20px;
+  width: 100%;
+}
+
+.project-container svg {
+  height: 50px;
+  width: 50px;
+  margin-right: 100px;
+}
+
+#test {
+  margin-top: 1000px;
+  font-size: 5rem;
 }
