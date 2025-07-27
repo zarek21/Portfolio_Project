@@ -82,6 +82,7 @@ a {
   border-radius: 9999px;
   border-width: 3px;
   font-weight: 700;
+  letter-spacing: 1px;
   width: 150px;
   flex-shrink: 0;
   text-align: center;
@@ -136,6 +137,7 @@ a {
   color: var(--clr-accent-text);
   max-width: 40ch;
   font-style: italic;
+  letter-spacing: 2px;
 }
 
 .what-i-do-img {
@@ -164,7 +166,7 @@ a {
 .icons {
   width: 120px;
   height: 120px;
-  margin-bottom: var(--space-xxl);
+  margin-bottom: var(--space-3xl);
   background-color: var(--clr-accent-bg);
   stroke: var(--clr-accent-text);
   border-radius: 9999px;
@@ -174,10 +176,12 @@ a {
 .project-grid-container h4 {
   font-size: var(--fs-600);
   color: var(--clr-text);
+  letter-spacing: 1px;
 }
 
 .project-grid-container p {
   font-size: var(--fs-500);
+  letter-spacing: 1px;
 }
 
 .role-description {
@@ -196,31 +200,36 @@ a {
 .languages p {
   color: var(--clr-accent-bg);
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
 }
 
-.bttn-languages p {
-  background-color: var(--clr-accent-bg);
+.bttn p {
+  border: 2px solid var(--clr-accent-bg);
+  padding: var(--space-md);
   border-radius: 9999px;
-  padding: 10px 30px;
-  color: var(--clr-accent-text);
+  border-width: 3px;
+  font-weight: 700;
+  width: 150px;
+  color: var(--clr-accent-hover);
   text-align: center;
   font-size: var(--fs-base);
   font-weight: 600;
   margin-bottom: var(--space-xl);
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 19px;
+  box-shadow: 0px 20px 1px 1px var(--clr-accent-bg);
+  letter-spacing: 1px;
 }
 
 .tools {
-  margin-top: var(--space-3xl);
-  margin-bottom: var(--space-3xl);
+  margin-top: 7rem;
 }
 
 .tools p {
-  color: var(--clr-accent-bg);
+  letter-spacing: 3px;
   font-weight: 500;
-  letter-spacing: 1px;
+  color: var(--clr-accent-bg);
+  margin-bottom: var(--space-3xl);
 }
 
 #test {
