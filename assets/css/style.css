@@ -115,7 +115,6 @@ a {
   margin-top: var(--space-md);
   font-size: var(--fs-800);
   font-weight: 400;
-  letter-spacing: 0.1rem;
   color: var(--clr-text);
 }
 
@@ -133,9 +132,10 @@ a {
 
 .what-i-do-text {
   font-size: var(--fs-700);
-  font-weight: 400;
+  font-weight: 300;
   color: var(--clr-accent-text);
   max-width: 40ch;
+  font-style: italic;
 }
 
 .what-i-do-img {
@@ -164,7 +164,7 @@ a {
 .icons {
   width: 120px;
   height: 120px;
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-xxl);
   background-color: var(--clr-accent-bg);
   stroke: var(--clr-accent-text);
   border-radius: 9999px;
@@ -189,22 +189,38 @@ a {
 }
 
 .languages {
-  margin-top: 100px;
+  margin-top: 150px;
+  margin-bottom: var(--space-3xl);
 }
 
 .languages p {
-  color: var(--clr-text);
+  color: var(--clr-accent-bg);
   font-weight: 500;
+  letter-spacing: 1px;
 }
 
-.languages ul {
-  color: var(--clr-text);
-  font-size: var(--fs-500);
-  list-style-type: none;
+.bttn-languages p {
+  background-color: var(--clr-accent-bg);
+  border-radius: 9999px;
+  padding: 10px 30px;
+  color: var(--clr-accent-text);
+  text-align: center;
+  font-size: var(--fs-base);
+  font-weight: 600;
+  margin-bottom: var(--space-xl);
+  display: inline-block;
+  margin-right: 20px;
 }
 
-.languages li {
-  padding: 10px;
+.tools {
+  margin-top: var(--space-3xl);
+  margin-bottom: var(--space-3xl);
+}
+
+.tools p {
+  color: var(--clr-accent-bg);
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
 #test {
