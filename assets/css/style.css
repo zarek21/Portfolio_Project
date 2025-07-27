@@ -68,17 +68,13 @@ a {
 
 .contact-info {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   gap: var(--space-xxl);
-  margin-top: 250px;
-  margin-left: 300px;
-  position: fixed;
   align-self: flex-start;
 }
 
 .contact-info a {
-  margin-top: var(--space-3xl);
+  margin-top: 7rem;
   color: var(--clr-accent-bg);
   background-color: transparent;
   border: 2px solid var(--clr-accent-bg);
@@ -106,7 +102,7 @@ a {
 .name {
   display: flex;
   justify-content: center;
-  margin-top: var(--space-3xl);
+  margin-top: 10rem;
   font-size: var(--fs-900);
   font-weight: 600;
   letter-spacing: -0.1rem;
@@ -127,37 +123,75 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 14rem;
+  margin-top: 7rem;
   gap: var(--space-xxl);
+  background-color: #4e31a1;
+  padding: var(--space-3xl);
+  border-radius: var(--space-md);
 }
 
 .what-i-do-text {
   font-size: var(--fs-700);
   font-weight: 400;
-  color: var(--clr-text);
+  color: var(--clr-accent-text);
   max-width: 40ch;
 }
 
 .what-i-do-img {
   display: block;
+  order: -1;
+  border-radius: var(--space-md);
+  object-fit: cover;
   height: 400px;
   width: 400px;
-  order: -1;
-  border-radius: var(--space-lg);
-  object-fit: cover;
-}
-
-.projects-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-  margin-top: 120px;
-  font-size: var(--fs-600);
-  gap: 20rem;
 }
 
 .project-img-1 {
   width: 400px;
   height: 400px;
   align-self: self-start;
+}
+
+.title-projects {
+  display: flex;
+  justify-content: center;
+  margin-top: 15rem;
+  color: var(--clr-text);
+  border-bottom: var(--clr-accent-bg);
+}
+
+.title-projects h4 {
+  font-size: var(--fs-800);
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.projects-container {
+  margin-top: 70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--clr-accent-bg);
+  border-radius: var(--space-md);
+  padding: var(--space-3xl);
+  gap: 200px;
+}
+
+.project-img-1 {
+  width: 400px;
+  height: 400px;
+  border-radius: var(--space-md);
+}
+
+.projects-container ul {
+  font-size: var(--fs-700);
+  color: var(--clr-accent-text);
+  line-height: 90px;
+  margin-left: -90px;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.projects-container h4 {
 }
