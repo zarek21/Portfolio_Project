@@ -1,1 +1,41 @@
 /* HEADER CSS */
+
+.header {
+  padding: 2.4rem;
+  background-color: #ae3ec9;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.logo-header {
+  font-size: 2.4rem;
+  color: #333;
+}
+.nav-list {
+  display: flex;
+  gap: 2.4rem;
+  list-style-type: none;
+}
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #111;
+  transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: black;
+}
+
+.nav-link.cta:link,
+.nav-link.cta:visited {
+  color: rebeccapurple;
+}
+
+.nav-link.cta:hover,
+.nav-link.cta:active {
+  color: red;
+}
